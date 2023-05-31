@@ -1,0 +1,45 @@
+.sidebar--div{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 300px;
+    background-color: #77d9fa;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.sidebar--ul{
+    list-style-type: none;
+}
+.sidebar--ul li{
+    font-family: "RobotoBold";
+    margin-top: 0.5rem;
+    font-size: 22px;
+    color: #29455B;
+}
+.sidebar--ul li:hover{
+    cursor: pointer;
+    color: #fd86ae !important;
+    transition: all ease-in 0.3s;
+}
+.name--style{
+    font-family: "RobotoBold";
+    font-size: 25px;
+    color: #29455B;
+}
+.active{
+    color: #fd86ae !important;
+}
+.sidebar--avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--main);
+}
+@media screen and (min-width:300px) and (max-width:1023px) {
+    .sidebar--div{
+        display: none;
+        transition: all ease-out 0.5s;
+    }
+}
