@@ -62,18 +62,22 @@ function TodoApp() {
     filterTodos(status.value);
   }, [todos,status]);
   return (
-    <div>
-      <CompletedItem
+    <>
+      {/* <CompletedItem
         onChangeFilterList={onChangeFilterList}
         status={status}
         setStatus={setStatus}
         filterTodos={filterTodos}
         remaining={todos.filter((item) => !item.isCompleted).length}
         favorite={todos.filter(t=> t.Favorite).length}
-      />
-      {additem ? <AiOutlineMinus fontSize={'1.5rem'} onClick={()=>setAdditem(!additem)} color={'red'}/> :<BsPlusCircleDotted onClick={()=>setAdditem(!additem)} fontSize={'1.5rem'} color={'red'}/>}
+      /> */}
+
+
+      {/* {additem ? <AiOutlineMinus fontSize={'1.5rem'} onClick={()=>setAdditem(!additem)} color={'red'}/> :<BsPlusCircleDotted onClick={()=>setAdditem(!additem)} fontSize={'1.5rem'} color={'red'}/>}
        <span>{additem ? 'hide' :'add item' }</span>
-      {additem && <TodoForm name="Add Task" setTodos={setTodos} todos={todos} /> }
+      {additem && <TodoForm name="Add Task" setTodos={setTodos} todos={todos} /> } */}
+
+
       <TodoList
         todos={filtertodos}
         setTodos={setTodos}
@@ -82,7 +86,9 @@ function TodoApp() {
         updateTodo={updateTodo}
         FavoriteHandler={FavoriteHandler}
       />
-    </div>
+
+      
+    </>
   );
 }
 export default TodoApp;

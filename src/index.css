@@ -1,13 +1,18 @@
+:root{
+  --primary: #e2edff;
+  --bg: #120722;
+  --text: #fff;
+  --border-color: #200648;
+  --border-hover: #430c94;
+  --btn-color: #b486f8;
+  --shadow1: #160122;
+  --shadow2: #0c0015;
+}
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--bg);
   font-family:"Roboto" !important ;
-}
-:root{
-  --primary: #e2edff;
-  --secondary:#7f9bc2;
-  --blue:#77d9fa;
-  --pink:#fd86ae;
 }
 @font-face {
   font-family: "RobotoBold";
@@ -18,8 +23,8 @@ body {
   font-family: "Roboto";
   src: url("./assets/fonts/Roboto/Roboto-Regular.ttf") format(".ttf");
  }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-   
+.title{
+  color: var(--primary);
+  font-family: "RobotoBold";
+  text-align: center;
 }

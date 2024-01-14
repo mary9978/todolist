@@ -8,26 +8,12 @@ const TodoListPage = () => {
     <div className={"App"}>
       <Container fluid>
         <Row>
-           <Col sm={'4'}>
-              <Sidebar opensSidebar={opensSidebar} setOpenSidebar={setOpenSidebar}/>
-           </Col>
-           <Col sm={'6'}>
+           <Col sm={'12'}>
+             <h2 className="title mt-5">Just Do It</h2>
              <TodoApp />
            </Col>
         </Row>
       </Container>
-      {/* <div className={"container-fluid"}>
-        <div className={"row"}>
-          <div className={"col-4"}>
-            <Sidebar opensSidebar={opensSidebar} setOpenSidebar={setOpenSidebar}/>
-          </div>
-          <div className={"col-6"}>
-            <h1>Mari's ToDo App</h1>
-            <TodoApp />
-          </div>
-        </div>
-      </div> */}
-  
     </div>
   );
 };
